@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    gap: 50px;
+}
+
+.score-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.score-section .label {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.score-section .score {
+    color: #4ade80;
+    font-size: 56px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(74, 222, 128, 0.5);
+}
+
+#gameCanvas {
+    display: block;
+    margin: 0 auto 30px;
+    background: #000;
+    border: 3px solid #4ade80;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(74, 222, 128, 0.3);
+    max-width: 100%;
+    height: auto;
+}
+
+.instructions {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.8;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #4ade80;
+}
+
+.instructions p {
+    margin: 8px 0;
+}
+
+.instructions strong {
+    color: #4ade80;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .scoreboard {
+        gap: 20px;
+    }
+
+    .score-section {
+        padding: 15px 30px;
+    }
+
+    .score-section .score {
+        font-size: 40px;
+    }
+
+    #gameCanvas {
+        max-width: 100%;
+    }
+
+    .instructions {
+        font-size: 14px;
+    }
+}
